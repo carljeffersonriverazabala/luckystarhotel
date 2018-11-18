@@ -1,0 +1,354 @@
+* {
+	box-sizing: border-box;
+}
+
+body{
+	background-color: black;
+	font-family: Exo;
+}
+
+a {
+	font-family: Exo;
+	text-decoration: none;
+}
+
+ul{
+	position:absolute;
+	top: 25px;
+	right: 20px;
+	float:Right;
+	
+}
+
+
+ul li{
+	display:inline-block;
+	
+}
+
+ul li a{
+	text-decoration:none;
+	color: white;
+	padding: 5px 20px;
+	border: 1px solid ;
+	transition: 0.5s ease;
+}
+
+ul li a:hover{
+	background-color: #fff;
+	color: #000;
+}
+
+ul li.active a{
+	background-color: #fff;
+	color: #000;
+	border: line 1px solid #000;
+}
+.button {
+	
+	position: absolute;
+	top: 60%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+}
+
+.button {
+	border: 1px solid #000;
+	padding:10px 30px;
+	color:white;
+	text-decoration: none;
+	
+}
+
+.button:hover {
+	background-color: gray;
+	color: #fff;
+	
+}
+
+.logo a{
+	position: absolute;
+	top:20px;
+	left: 20px;	
+	color: #fff;
+	padding: 20px;
+	border: 1px solid;
+}
+
+.slidetitle{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	
+}
+
+.slidetitle h1{
+	color: white;
+	font-size: 70px;
+	border: 1px #fff solid;
+	padding: 10px 25px;
+
+}
+
+
+
+.showcase{
+	padding: 250px;
+	background-image:url(../images/bar.jpg); 
+	background-repeat: no-repeat;
+	background-size: cover;
+	box-shadow: 0 0 5px #FFF;
+	margin-bottom: 20px;
+	margin-top:100px;
+	background-attachment: fixed;
+	
+	
+}
+
+.showcase:hover {
+	background-image: url(../images/background.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-attachment: fixed;
+	transition: 3s;
+	background-position: center;
+	
+}
+
+
+.container{
+	padding: 0px;
+	display: grid;
+	grid-gap: 10px;
+	grid-template-columns: 1fr 1fr 1fr;
+	border: solid;
+	grid-template-rows: 1fr 1fr ;
+}
+
+.container > div{
+	padding:100px;
+	transition: all .2s ease-out;
+}
+
+.restaurant {
+	color: white;
+	text-align: center;
+	position: relative;
+	z-index: 1;
+}
+
+.restaurant::after {
+	position: absolute;
+	top: 0; 
+	right: 0;
+	bottom: 0;
+	left: 0;
+	content:"";
+	background-image: url(../images/resturant.jpg);
+	background-repeat:no-repeat;
+	background-size: cover;
+	background-position: center;
+	opacity: 0.5;
+	z-index: -1;
+}
+
+.restaurant:hover{
+	color:orange;
+}
+
+
+
+.cafee {
+	color: white;
+	text-align: center;
+	position: relative;
+	z-index: 1;
+}
+
+.cafee::after{
+	position: absolute;
+	top: 0; 
+	right: 0;
+	bottom: 0;
+	left: 0;
+	content:"";
+	background-image: url(../images/shop.jpg);
+	background-repeat:no-repeat;
+	background-size: cover;
+	background-position: center;
+	opacity: 0.5;
+	z-index: -1;
+}
+
+.cafee:hover{
+	color:orange;
+}
+
+.spa{	
+	color: white;
+	text-align: center;
+	position: relative;
+	z-index: 1;
+}
+
+.spa::after{
+	position: absolute;
+	top: 0; 
+	right: 0;
+	bottom: 0;
+	left: 0;
+	content:"";
+	background-image: url(../images/spa101.jpeg);
+	background-repeat:no-repeat;
+	background-size: cover;
+	background-position: center;
+	opacity: 0.5;
+	z-index: -1;
+}
+
+.spa:hover{
+	color:orange;
+}
+
+.wedding {
+	color: white;
+	text-align: center;
+	position: relative;
+	z-index: 1;
+}
+
+.wedding::after{
+	position: absolute;
+	top: 0; 
+	right: 0;
+	bottom: 0;
+	left: 0;
+	content:"";
+	background-image: url(../images/function.jpeg);
+	background-repeat:no-repeat;
+	background-size: cover;
+	background-position: center;
+	opacity: 0.5;
+	z-index: -1;
+}
+
+.wedding:hover{
+	color: orange;
+}
+
+.rooms{
+	color: white;
+	text-align: center;
+	position: relative;
+	z-index: 1;
+}
+
+.rooms::after{
+	position: absolute;
+	top: 0; 
+	right: 0;
+	bottom: 0;
+	left: 0;
+	content:"";
+	background-image: url(../images/deluxe.jpg);
+	background-repeat:no-repeat;
+	background-size: cover;
+	background-position: center;
+	opacity: 0.5;
+	z-index: -1;
+}
+
+.rooms:hover{
+	color: orange;
+}
+
+.bar{
+	color: white;
+	text-align: center;
+	position: relative;
+	z-index: 1;
+}
+
+.bar::after{
+	position: absolute;
+	top: 0; 
+	right: 0;
+	bottom: 0;
+	left: 0;
+	content:"";
+	background-image: url(../images/resturant.jpeg);
+	background-repeat:no-repeat;
+	background-size: cover;
+	background-position: center;
+	opacity: 0.5;
+	z-index: -1;
+}
+
+.bar:hover{
+	color:orange;
+}
+
+.pool{
+	color: white;
+	text-align:center;
+	position: relative;
+	z-index: 1;
+}
+
+.pool::after{
+	position: absolute;
+	top: 0; 
+	right: 0;
+	bottom: 0;
+	left: 0;
+	content:"";
+	background-image: url(../images/pool5.jpeg);
+	background-repeat:no-repeat;
+	background-size: cover;
+	background-position: center;
+	opacity: 0.5;
+	z-index: -1;
+}
+
+.pool:hover{
+	color: orange;
+}
+
+.footer-basic-centered{
+	background-color: #292c2f;
+	box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
+	box-sizing: border-box;
+	width: 100%;
+	text-align: center;
+	font: normal 18px sans-serif;
+
+	padding: 45px;
+	margin-top: 80px;
+}
+
+.footer-basic-centered .footer-company-motto{
+	color:  orange;
+	font-size: 24px;
+	margin: 0;
+}
+
+.footer-basic-centered .footer-company-name{
+	color:  #8f9296;
+	font-size: 14px;
+	margin: 0;
+}
+
+.footer-basic-centered .footer-links{
+	list-style: none;
+	font-weight: bold;
+	color:  #ffffff;
+	padding: 35px 0 23px;
+	margin: 0;
+}
+
+.footer-basic-centered .footer-links a{
+	display:inline-block;
+	text-decoration: none;
+	color: inherit;
+}
